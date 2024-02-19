@@ -1,0 +1,27 @@
+/* --- CSS Demo ---*/
+/* Color Scheme: */
+
+body{
+    font-family: "Roboto Serif", serif;
+    background-color:rgb(209, 227, 220)
+}
+header{
+    font-family: "Roboto Slab", serif;
+    background-color:rgb(164, 207, 190);
+    color:rgb(97, 106, 102)
+}
+a:link{
+    color:rgb(92, 142, 180)
+}
+a:visited{
+    color:rgb(131, 136, 166)
+}
+
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
