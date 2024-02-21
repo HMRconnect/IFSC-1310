@@ -1,23 +1,9 @@
 /* --- CSS Demo ---*/
-/* Color Scheme: */
 
-body{
-    font-family: "Roboto Serif", serif;
-    background-color:rgb(209, 227, 220)
-}
-header{
-    font-family: "Roboto Slab", serif;
-    background-color:rgb(164, 207, 190);
-    color:rgb(97, 106, 102)
-}
-a:link{
-    color:rgb(92, 142, 180)
-}
-a:visited{
-    color:rgb(131, 136, 166)
-}
+/* Color Scheme: bg1: rgb(209, 227, 220), bg2: rgb(164, 207, 190), txt1: rgb(97, 106, 102), txt2: rgb(79, 89, 85), detail: #44717d, detail2:#364d53 */
 
-html {
+/* Box Sizing, makes altering borders & padding more straightforward */
+html { 
     box-sizing: border-box;
   }
   *,
@@ -25,3 +11,94 @@ html {
   *:after {
     box-sizing: inherit;
   }
+
+body{
+    font-family: "Roboto Serif", serif;
+    background-color:rgb(209, 227, 220);
+    color:rgb(79, 89, 85);
+    margin:0;
+}
+
+header{
+    font-family: "Roboto Slab", serif;
+    background-color:rgb(164, 207, 190);
+    color:rgb(97, 106, 102);
+    padding:5px;
+}
+
+header.primary{
+    text-align:center;
+    padding: 10px,5px,10px,5px; /* top, right, bottom, left, in order of what area is being padded. Can also use like, padding-left for specifics.*/
+    border-style: double;
+    border-width: 5px;
+    border-color:#44717d
+}
+
+
+header.primary h1{
+    text-shadow: 1px 1px #47656d;
+    font-size: 2.5rem;
+}
+
+header.primary h1 a:link{
+    color:rgb(97, 106, 102);
+    text-decoration:none;
+}
+
+header.primary h1 a:visited{
+    color:rgb(97, 106, 102);
+    text-decoration:none;
+}
+
+header.primary h2{
+    max-width:900px;
+    background-color:rgb(209, 227, 220);
+    margin: 20px auto;
+}
+
+#navmain {
+    padding: 10px;
+    margin:10px auto; /* Centers the element regardless of the monitor/screen size */
+}
+
+#navmain ul{
+    padding:0; /* Gets rid of the bullet points! */
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+
+}
+
+#navmain ul li{
+    list-style-type:none;
+}
+
+#navmain a{
+    text-decoration:none; /*removes the link underline.*/
+    background-color: #44717d;
+    color: rgb(209, 227, 220);
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 1px solid #364d53;
+    transition: .4s; /* Makes the transition between states (to hover in this case) happen over a set time. */
+}
+#navmain a:hover{
+    background-color: #364d53;
+}
+
+h2,h3{
+    font-family: "Roboto Slab", serif;
+    color:rgb(97, 106, 102)  ;
+    margin: 10px;
+    border-left:#44717d solid 5px;
+}
+
+
+a:link{
+    color:rgb(92, 142, 180)
+}
+a:visited{
+    color:rgb(131, 136, 166)
+}
+
+
