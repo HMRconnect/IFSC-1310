@@ -12,11 +12,27 @@ html {
     box-sizing: inherit;
   }
 
+  /* Utility Styles */
+  /* */
+
+  .container{
+    max-width:960px;
+    width:80vw; /* vw means viewport width, keeps the container at 80% of the width of the vp without exceeding 960px. */
+    margin:30px auto;
+  }
+
+
+  /* Global Styles */
+
 body{
     font-family: "Roboto Serif", serif;
     background-color:rgb(209, 227, 220);
     color:rgb(79, 89, 85);
     margin:0;
+}
+
+#content{
+    line-height:1.5; /* just spaces the text out more, like i'm adding line spacing in word. */
 }
 
 header{
@@ -90,8 +106,10 @@ h2,h3{
     font-family: "Roboto Slab", serif;
     color:rgb(97, 106, 102)  ;
     margin: 10px;
+    padding-left: 10px;
     border-left:#44717d solid 5px;
 }
+
 
 
 a:link{
@@ -101,4 +119,50 @@ a:visited{
     color:rgb(131, 136, 166)
 }
 
+#blog{
+    display:flex; /* uses flex box, uses the #blog class as the parent/container. I believe */
+    flex-direction:row;
+    justify-content: space-around;
+    gap:2rem; /* a reminder there is no rule or guideline telling you to only use 1-2 kinds of units of measurement in a page. Use what works best. */
+}
 
+#blog .post{ 
+    /* small note! a space between the words there communicates it applies to elements within blog id that have the class post. 
+    If it was #blog.post with no space, it would apply to elements with both id blog and class post.  Also, Technically could achieve the same
+    in this page just by using .post, but erring on the side of specific is better just in case in these things.*/
+    box-shadow: 0 8px 16px #849ba1;
+    padding: 10px;
+    border: 2px solid #44717d;
+    border-radius: 4px;
+    font-size: .8rem;
+    transition: .5s
+
+}
+
+#blog figcaption{
+    text-transform: uppercase; /* can apply things like uppercase, lowercase, & capitalize. Automatically make all titles capitalized for instance.*/
+}
+
+#blog header h2{
+    padding-top:10px
+    margin 0;
+}
+
+#blog .post:hover{ 
+    /* over specificity can also be a detriment if you want to be more general to an area. Want it to apply more globally, carefully remove some. */
+    
+}
+
+img{
+    max-width: 100%; /* confines the size of the element (in this case, the images) to be at most 100% of their parent container. */
+}
+
+@media screen and (max-width:600px){ /* makes the nav rearrange into a neat column format when the screen is  compressed enough. At least, it's supposed to (fix!)*/
+    #navmain ul{
+        flex-direction:column; 
+        gap:20px;
+        max-width:250px;
+        text-align:center;
+        margin:auto;
+    }
+}
