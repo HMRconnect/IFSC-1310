@@ -1,0 +1,12 @@
+body{
+    background-color: #e7e7d5;
+}
+.wrapper{
+    display:grid;
+    grid-gap:10px
+}
+
+.box{
+    background-color:#d0d0c4;
+    border: 2px dashed #bfbfb6
+}

@@ -71,6 +71,7 @@ header.primary h2{
     max-width:900px;
     background-color:rgb(209, 227, 220);
     margin: 20px auto;
+    border-right: 5px solid #44717d;
 }
 
 #navmain {
