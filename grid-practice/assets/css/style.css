@@ -1,9 +1,15 @@
 body{
     background-color: #e7e7d5;
 }
+img{
+    margin:40px;
+}
+
 .wrapper{
     display:grid;
-    grid-gap:10px
+    grid-gap:10px;  
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: none;
 }
 
 .box{
