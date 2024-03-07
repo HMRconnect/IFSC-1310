@@ -2,14 +2,18 @@ body{
     background-color: #e7e7d5;
 }
 img{
-    margin:40px;
+    display:block;
+    margin:40px auto;
+    max-width:50%;
 }
 
 .wrapper{
     display:grid;
+    margin: 20px auto;
+    max-width: 80%;
     grid-gap:10px;  
-    grid-template-columns: 30% 30% 30%;
-    grid-template-rows: none;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 .box{
