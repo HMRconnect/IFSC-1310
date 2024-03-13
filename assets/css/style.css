@@ -1,3 +1,16 @@
+
+/* colors?:  #26E0BB #43A18E #41615B #E05826 #8B5946 #36302E  */
+
+/* Box Sizing, makes altering borders & padding more straightforward */
+html { 
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
 body{
     background-color: #a8e9de;
     text-align: center;
