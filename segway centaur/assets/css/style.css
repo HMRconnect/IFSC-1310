@@ -1,5 +1,7 @@
 /* colors: #EDEDED (main gray), fonts?:"Helvetica Neue", Helvetica, Arial,  */
 
+
+
 body{
     background-color: #EDEDED;
     font-family: "Open Sans", sans-serif;
@@ -17,4 +19,36 @@ h2{
 .separated{
     margin:20px auto;
 }
+
+#concept{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    background-color: aqua;
+
+}
+
+.part{
+    padding: none;
+    background-color:white;
+}
+
+#mainimg{
+    background-color:white;
+}
+
+
+#mainimg img {
+    height: 60vh;
+}
+
+#concept::after {
+    content:"";
+    display:block;
+    width:100%;
+    height: 60vh;
+    position:absolute;
+    background-color: ;
+    box-shadow: inset 3px 3px 10px 0 #000000;
+  }
 
