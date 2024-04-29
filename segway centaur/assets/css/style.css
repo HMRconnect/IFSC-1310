@@ -114,3 +114,9 @@ ul.container{
     border: 5px solid #f7c08d;
     border-radius: 10px 10px;
 }
+
+li img{
+    max-width:20%;
+    margin: auto;
+    border: 2px solid black;
+}
