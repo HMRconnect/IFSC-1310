@@ -13,20 +13,15 @@ nav ul{
     display: flex;
     flex-direction:row;
     justify-content: space-around;
-    
-    
 }
 
 nav ul li{
-    
-
     margin-top:auto;
     border: 6px double black;
-    background-color: rgb(235, 235, 235, 0.1);
-    
+    background-color: rgb(235, 235, 235, 0.1);  
 }
 
-nav a{
+nav li a{
     text-decoration:none;
     color: #ebebeb;
     font-weight:bold;
@@ -36,13 +31,17 @@ nav a{
     transition: .2s;
 }
 
-nav a:hover{
+nav li a:hover{
     background-color: rgb(235, 235, 235, 0.3);
 }
 
-#logo{
+nav #logo{
     width:150px;
+    border:0px;
+    background-color: transparent;
 }
+
+
 
 body{
     font-family: "Open Sans", sans-serif;
@@ -63,7 +62,17 @@ h2{
     font-size:40px;
     text-shadow: 1px 1px 3px #000000;
     background-color:#818181;
-    border: 2px solid black;
+    border: 2px solid #000000;
+}
+
+h3{
+    background-color: #818181;
+    font-size:30px;
+    font-style:italic;
+    text-shadow: 1px 1px 1px #2b2b2b;
+    padding: 10px;
+    border: 2px solid #000000;
+    margin: 40px 0px 40px 0px;
 }
 
 header.primary{    
@@ -138,19 +147,6 @@ header.primary{
 }
 
 
-h3{
-    background-color: #818181;
-    color:#dbdbdb;
-    font-style:italic;
-    text-shadow: 1px 1px 1px #2b2b2b;
-    padding: 10px;
-    border: 3px solid #111111;
-    margin: 40px 0px 40px 0px;
-}
-
-
-
-
 .container{
     display: flex;
     flex-direction:row;
@@ -177,43 +173,54 @@ ul.container{
 .container li h4{
     background-color: #5c5c5c;
     padding:5px;
-    color:#dbdbdb;
+    color:#e2e6e7;
     border: 2px solid black;
 }
 
 .container li img{
     width:300px;
     margin: auto;
-    border: 2px solid black;
-    
-    
+    border: 2px solid black; 
 }
 
 img {
-    padding:none;
+    padding:0px;
     max-width: 100%;
 }
 
-.faq div{
+.secondary div{
     margin: 80px 40px 80px 40px;
     
 }
 
-.faq h2{
+.secondary h2{
     padding-left: 20px;
     font-style: italic;
 }
 
-.faq p{
+.secondary p{
     font-size: 20px;
     background-color: rgb(255, 255, 255, 0.1);
+    padding: 10px;
+}
+
+.secondary #img{
+    
+    text-align: center;
+    margin:40px auto;
+    
+}
+
+.secondary img{
+    width:500px;
+    border: 2px solid black;
 }
 
 footer
 {
     background-color: rgb(37, 37, 37, 0.5);
     padding: 10px;
-    bottom:0;
+
 }
 
 footer div{
